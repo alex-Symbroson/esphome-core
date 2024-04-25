@@ -121,10 +121,8 @@
 // #define USE_NEXTION
 // #define USE_HLW8012*/
 // #define USE_TEXT_SENSOR
-// //#define USE_MQTT_SUBSCRIBE_TEXT_SENSOR
 // #define USE_VERSION_TEXT_SENSOR
 // #define USE_TEMPLATE_TEXT_SENSOR
-// /*#define USE_MQTT_SUBSCRIBE_SENSOR
 // #define USE_CSE7766
 // #define USE_PMSX003
 // #define USE_ENDSTOP_COVER
@@ -147,7 +145,6 @@
 // #define USE_HOMEASSISTANT_BINARY_SENSOR
 // /*#define USE_APDS9960
 // #define USE_MPR121
-// #define USE_MQTT
 // #define USE_COPY_OUTPUT
 // #define USE_WIFI_INFO_TEXT_SENSOR
 // #define USE_SERVO
