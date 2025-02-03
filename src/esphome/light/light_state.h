@@ -351,7 +351,6 @@ class LightOutput {
 
 ESPHOME_NAMESPACE_END
 
-#include "esphome/light/mqtt_json_light_component.h"
 #include "esphome/light/light_automation.h"
 
 #endif  // USE_LIGHT

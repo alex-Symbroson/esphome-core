@@ -256,8 +256,6 @@ template<typename... Ts> BinarySensorPublishAction<Ts...> *BinarySensor::make_bi
 
 ESPHOME_NAMESPACE_END
 
-#include "esphome/binary_sensor/mqtt_binary_sensor_component.h"
-
 #endif  // USE_BINARY_SENSOR
 
 #endif  // ESPHOME_BINARY_SENSOR_BINARY_SENSOR_H
