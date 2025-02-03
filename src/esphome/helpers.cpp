@@ -201,7 +201,8 @@ void reserve_global_json_build_buffer(size_t required_size) {
 
 const char *build_json(const json_build_t &f, size_t *length) {
   global_json_buffer.clear();
-  JsonObject root = global_json_buffer.add<JsonObject>();
+  JsonObject root;
+  global_json_buffer.add(root);
 
   f(root);
 
