@@ -107,7 +107,7 @@ bool MQTTComponent::send_discovery_() {
           root["unique_id"] = "ESP" + this->component_type() + this->get_default_object_id_();
         }
 
-        JsonObject &device_info = root.createNestedObject("device");
+        JsonObject device_info = root.createNestedObject("device");
         device_info["identifiers"] = get_mac_address();
         device_info["name"] = node_name;
         if (get_app_compilation_time().empty()) {

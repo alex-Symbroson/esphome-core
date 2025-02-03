@@ -127,13 +127,13 @@ class WebServer : public StoringUpdateListenerController, public Component, publ
 #endif
 
   /// Override the web handler's canHandle method.
-  bool canHandle(AsyncWebServerRequest *request) override;
+  bool canHandle(AsyncWebServerRequest *request);
   /// Override the web handler's handleRequest method.
   void handleRequest(AsyncWebServerRequest *request) override;
   void handleUpload(AsyncWebServerRequest *request, const String &filename, size_t index, uint8_t *data, size_t len,
                     bool final) override;
   /// This web handle is not trivial.
-  bool isRequestHandlerTrivial() override;
+  bool isRequestHandlerTrivial();
 
  protected:
   uint16_t port_;
