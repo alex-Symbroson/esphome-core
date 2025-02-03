@@ -17,12 +17,8 @@
   ],
   "dependencies": [
     {
-      "name": "FastLED",
-      "version":  "https://github.com/FastLED/FastLED.git"
-    },
-    {
       "name": "ESPAsyncWebServer",
-      "version":  "https://github.com/me-no-dev/ESPAsyncWebServer.git"
+      "version":  "https://github.com/ESP32Async/ESPAsyncWebServer.git"
     },
     {
       "name": "ArduinoJson",
