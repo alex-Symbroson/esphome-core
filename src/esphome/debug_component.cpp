@@ -13,7 +13,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "debug";
+__unused static const char *TAG = "debug";
 
 void DebugComponent::setup() {
 #ifndef ESPHOME_LOG_HAS_DEBUG

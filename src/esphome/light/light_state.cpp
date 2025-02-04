@@ -15,7 +15,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace light {
 
-static const char *TAG = "light.state";
+__unused static const char *TAG = "light.state";
 
 void LightState::start_transition_(const LightColorValues &target, uint32_t length) {
   this->transformer_ = make_unique<LightTransitionTransformer>(millis(), length, this->current_values, target);

@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace cover {
 
-static const char *TAG = "cover.template";
+__unused static const char *TAG = "cover.template";
 
 TemplateCover::TemplateCover(const std::string &name)
     : Cover(name),

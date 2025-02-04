@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace binary_sensor {
 
-static const char *TAG = "binary_sensor.custom";
+__unused static const char *TAG = "binary_sensor.custom";
 
 CustomBinarySensorConstructor::CustomBinarySensorConstructor(const std::function<std::vector<BinarySensor *>()> &init) {
   this->binary_sensors_ = init();

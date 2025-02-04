@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace fan {
 
-static const char *TAG = "fan.basic_fan";
+__unused static const char *TAG = "fan.basic_fan";
 
 void BasicFanComponent::set_binary(output::BinaryOutput *output) { this->binary_output_ = output; }
 void BasicFanComponent::set_speed(output::FloatOutput *output, float low_speed, float medium_speed, float high_speed) {

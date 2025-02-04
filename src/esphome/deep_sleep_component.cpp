@@ -10,7 +10,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "deep_sleep";
+__unused static const char *TAG = "deep_sleep";
 
 bool global_has_deep_sleep = false;
 

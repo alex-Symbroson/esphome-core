@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace sensor {
 
-static const char *TAG = "sensor.uptime";
+__unused static const char *TAG = "sensor.uptime";
 
 UptimeSensor::UptimeSensor(const std::string &name, uint32_t update_interval)
     : PollingSensorComponent(name, update_interval) {}

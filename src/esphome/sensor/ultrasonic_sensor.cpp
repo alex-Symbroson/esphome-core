@@ -11,7 +11,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace sensor {
 
-static const char *TAG = "sensor.ultrasonic";
+__unused static const char *TAG = "sensor.ultrasonic";
 
 UltrasonicSensorComponent::UltrasonicSensorComponent(const std::string &name, GPIOPin *trigger_pin, GPIOPin *echo_pin,
                                                      uint32_t update_interval)

@@ -17,7 +17,7 @@ ESPHOME_NAMESPACE_BEGIN
 // bt_trace.h
 #undef TAG
 
-static const char *TAG = "esp32_ble_tracker";
+__unused static const char *TAG = "esp32_ble_tracker";
 
 ESP32BLETracker *global_esp32_ble_tracker = nullptr;
 

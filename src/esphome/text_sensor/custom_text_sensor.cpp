@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace text_sensor {
 
-static const char *TAG = "text_sensor.custom";
+__unused static const char *TAG = "text_sensor.custom";
 
 CustomTextSensorConstructor::CustomTextSensorConstructor(std::function<std::vector<TextSensor *>()> init) {
   this->text_sensors_ = init();

@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace switch_ {
 
-static const char *TAG = "switch.custom";
+__unused static const char *TAG = "switch.custom";
 
 CustomSwitchConstructor::CustomSwitchConstructor(std::function<std::vector<Switch *>()> init) {
   this->switches_ = init();

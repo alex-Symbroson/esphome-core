@@ -18,7 +18,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "ota";
+__unused static const char *TAG = "ota";
 
 uint8_t OTA_VERSION_1_0 = 1;
 

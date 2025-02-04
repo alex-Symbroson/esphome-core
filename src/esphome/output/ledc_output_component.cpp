@@ -12,7 +12,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace output {
 
-static const char *TAG = "output.ledc";
+__unused static const char *TAG = "output.ledc";
 
 void LEDCOutputComponent::write_state(float state) {
   const uint32_t max_duty = (uint32_t(1) << this->bit_depth_) - 1;

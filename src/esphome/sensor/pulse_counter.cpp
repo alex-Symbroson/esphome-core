@@ -12,7 +12,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace sensor {
 
-static const char *TAG = "sensor.pulse_counter";
+__unused static const char *TAG = "sensor.pulse_counter";
 
 PulseCounterBase::PulseCounterBase(GPIOPin *pin) : pin_(pin) {
 #ifdef ARDUINO_ARCH_ESP32

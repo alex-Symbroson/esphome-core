@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace text_sensor {
 
-static const char *TAG = "text_sensor.text_sensor";
+__unused static const char *TAG = "text_sensor.text_sensor";
 
 TextSensor::TextSensor() : TextSensor("") {}
 TextSensor::TextSensor(const std::string &name) : Nameable(name) {}

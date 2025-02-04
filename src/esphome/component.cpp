@@ -7,7 +7,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "component";
+__unused static const char *TAG = "component";
 
 namespace setup_priority {
 

@@ -8,7 +8,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "spi";
+__unused static const char *TAG = "spi";
 
 SPIComponent::SPIComponent(GPIOPin *clk, GPIOPin *miso, GPIOPin *mosi) : clk_(clk), miso_(miso), mosi_(mosi) {}
 

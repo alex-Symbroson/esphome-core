@@ -19,7 +19,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "wifi";
+__unused static const char *TAG = "wifi";
 
 float WiFiComponent::get_setup_priority() const { return setup_priority::WIFI; }
 

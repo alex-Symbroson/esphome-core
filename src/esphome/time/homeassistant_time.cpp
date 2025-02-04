@@ -14,7 +14,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace time {
 
-static const char *TAG = "time.homeassistant";
+__unused static const char *TAG = "time.homeassistant";
 
 void HomeAssistantTime::set_epoch_time(uint32_t epoch) {
   struct timeval timev {

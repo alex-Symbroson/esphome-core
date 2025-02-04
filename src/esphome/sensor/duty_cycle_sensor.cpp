@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace sensor {
 
-static const char *TAG = "sensor.duty_cycle";
+__unused static const char *TAG = "sensor.duty_cycle";
 
 DutyCycleSensor::DutyCycleSensor(const std::string &name, GPIOPin *pin, uint32_t update_interval)
     : PollingSensorComponent(name, update_interval), pin_(pin) {}

@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace sensor {
 
-static const char *TAG = "sensor.rotary_encoder";
+__unused static const char *TAG = "sensor.rotary_encoder";
 
 // based on https://github.com/jkDesignDE/MechInputs/blob/master/QEIx4.cpp
 static const uint8_t STATE_LUT_MASK = 0x1C;  // clears upper counter increment/decrement bits and pin states

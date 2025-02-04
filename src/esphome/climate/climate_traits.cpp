@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace climate {
 
-static const char *TAG = "climate.traits";
+__unused static const char *TAG = "climate.traits";
 
 bool ClimateTraits::supports_mode(ClimateMode mode) const {
   switch (mode) {

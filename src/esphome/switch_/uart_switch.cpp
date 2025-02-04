@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace switch_ {
 
-static const char *TAG = "switch.uart";
+__unused static const char *TAG = "switch.uart";
 
 UARTSwitch::UARTSwitch(UARTComponent *parent, const std::string &name, const std::vector<uint8_t> &data)
     : Switch(name), UARTDevice(parent), data_(data) {}

@@ -15,7 +15,7 @@ const uint8_t COLOR_ON = 1;
 
 namespace display {
 
-static const char *TAG = "display.display";
+__unused static const char *TAG = "display.display";
 
 void DisplayBuffer::init_internal_(uint32_t buffer_length) {
   this->buffer_ = new uint8_t[buffer_length];

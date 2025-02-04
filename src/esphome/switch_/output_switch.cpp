@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace switch_ {
 
-static const char *TAG = "switch.output";
+__unused static const char *TAG = "switch.output";
 
 OutputSwitch::OutputSwitch(const std::string &name, output::BinaryOutput *output) : Switch(name), output_(output) {}
 void OutputSwitch::write_state(bool state) {

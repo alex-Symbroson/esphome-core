@@ -10,7 +10,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace switch_ {
 
-static const char *TAG = "switch";
+__unused static const char *TAG = "switch";
 
 std::string Switch::icon() { return ""; }
 Switch::Switch(const std::string &name) : Nameable(name), state(false) {}

@@ -11,7 +11,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace sensor {
 
-static const char *TAG = "sensor.sensor";
+__unused static const char *TAG = "sensor.sensor";
 
 void Sensor::publish_state(float state) {
   this->raw_state = state;

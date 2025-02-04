@@ -18,7 +18,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace time {
 
-static const char *TAG = "time.sntp";
+__unused static const char *TAG = "time.sntp";
 
 SNTPComponent::SNTPComponent() : RealTimeClockComponent() {
   this->server_1_ = "0.pool.ntp.org";

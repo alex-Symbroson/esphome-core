@@ -16,7 +16,7 @@ void ICACHE_RAM_ATTR __attachInterruptArg(uint8_t pin, void (*)(void *), void *f
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "esphal";
+__unused static const char *TAG = "esphal";
 
 GPIOPin::GPIOPin(uint8_t pin, uint8_t mode, bool inverted)
     : pin_(pin),

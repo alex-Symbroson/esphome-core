@@ -19,7 +19,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "web_server";
+__unused static const char *TAG = "web_server";
 
 void write_row(AsyncResponseStream *stream, Nameable *obj, const std::string &klass, const std::string &action) {
   stream->print("<tr class=\"");

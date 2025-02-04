@@ -14,7 +14,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace sensor {
 
-static const char *TAG = "sensor.wifi_signal";
+__unused static const char *TAG = "sensor.wifi_signal";
 
 WiFiSignalSensor::WiFiSignalSensor(const std::string &name, uint32_t update_interval)
     : PollingSensorComponent(name, update_interval) {}

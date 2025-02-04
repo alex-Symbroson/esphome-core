@@ -8,7 +8,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "uart";
+__unused static const char *TAG = "uart";
 
 #ifdef ARDUINO_ARCH_ESP32
 uint8_t next_uart_num = 1;

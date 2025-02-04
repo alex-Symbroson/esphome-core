@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace time {
 
-static const char *TAG = "time.rtc";
+__unused static const char *TAG = "time.rtc";
 
 RealTimeClockComponent::RealTimeClockComponent() {}
 void RealTimeClockComponent::set_timezone(const std::string &tz) { this->timezone_ = tz; }

@@ -16,7 +16,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace api {
 
-static const char *TAG = "api";
+__unused static const char *TAG = "api";
 
 // APIServer
 void APIServer::setup() {

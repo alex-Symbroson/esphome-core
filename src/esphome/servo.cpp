@@ -7,7 +7,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "servo";
+__unused static const char *TAG = "servo";
 
 void Servo::write(float value) {
   if (value < -1.0)

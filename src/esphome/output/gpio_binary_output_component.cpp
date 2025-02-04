@@ -11,7 +11,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace output {
 
-static const char *TAG = "output.gpio";
+__unused static const char *TAG = "output.gpio";
 
 void GPIOBinaryOutputComponent::write_state(bool state) { this->pin_->digital_write(state); }
 

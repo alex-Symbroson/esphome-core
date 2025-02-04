@@ -16,7 +16,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "helpers";
+__unused static const char *TAG = "helpers";
 
 std::string get_mac_address() {
   char tmp[20];

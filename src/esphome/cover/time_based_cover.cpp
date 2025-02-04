@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace cover {
 
-static const char *TAG = "cover.time_based";
+__unused static const char *TAG = "cover.time_based";
 
 void TimeBasedCover::dump_config() {
   LOG_COVER("", "Time Based Cover", this);

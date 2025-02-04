@@ -7,7 +7,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "esp32_camera";
+__unused static const char *TAG = "esp32_camera";
 
 void ESP32Camera::setup() {
   global_esp32_camera = this;

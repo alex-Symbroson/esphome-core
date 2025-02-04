@@ -10,7 +10,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace fan {
 
-static const char *TAG = "fan.state";
+__unused static const char *TAG = "fan.state";
 
 const FanTraits &FanState::get_traits() const { return this->traits_; }
 void FanState::set_traits(const FanTraits &traits) { this->traits_ = traits; }

@@ -52,7 +52,7 @@ using namespace esphome::stepper;
 using namespace esphome::climate;
 #endif
 
-static const char *TAG = "application";
+__unused static const char *TAG = "application";
 
 void Application::setup() {
   ESP_LOGI(TAG, "Running through setup()...");

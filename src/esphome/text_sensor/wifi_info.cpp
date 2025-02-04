@@ -10,7 +10,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace text_sensor {
 
-static const char *TAG = "text_sensor.wifi_info";
+__unused static const char *TAG = "text_sensor.wifi_info";
 
 void IPAddressWiFiInfo::loop() {
   IPAddress ip = WiFi.localIP();

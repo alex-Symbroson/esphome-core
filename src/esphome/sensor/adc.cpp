@@ -10,7 +10,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace sensor {
 
-static const char *TAG = "sensor.adc";
+__unused static const char *TAG = "sensor.adc";
 
 ADCSensorComponent::ADCSensorComponent(const std::string &name, GPIOInputPin pin, uint32_t update_interval)
     : PollingSensorComponent(name, update_interval), pin_(pin) {}

@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace switch_ {
 
-static const char *TAG = "switch.template";
+__unused static const char *TAG = "switch.template";
 
 TemplateSwitch::TemplateSwitch(const std::string &name)
     : Switch(name), Component(), turn_on_trigger_(new Trigger<>()), turn_off_trigger_(new Trigger<>()) {}

@@ -10,7 +10,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "power_supply";
+__unused static const char *TAG = "power_supply";
 
 void PowerSupplyComponent::setup() {
   ESP_LOGCONFIG(TAG, "Setting up Power Supply...");

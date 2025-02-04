@@ -18,7 +18,7 @@ ESPHOME_NAMESPACE_BEGIN
 namespace light {
 
 #ifdef ESPHOME_LOG_HAS_VERBOSE
-static const char *TAG = "light.light_color_values";
+__unused static const char *TAG = "light.light_color_values";
 #endif
 
 float LightColorValues::get_state() const { return this->state_; }

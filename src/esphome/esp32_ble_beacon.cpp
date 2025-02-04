@@ -14,7 +14,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "esp32_ble_beacon";
+__unused static const char *TAG = "esp32_ble_beacon";
 
 static esp_ble_adv_params_t ble_adv_params = {
     .adv_int_min = 0x20,

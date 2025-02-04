@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace cover {
 
-static const char *TAG = "cover";
+__unused static const char *TAG = "cover";
 
 const float COVER_OPEN = 1.0f;
 const float COVER_CLOSED = 0.0f;

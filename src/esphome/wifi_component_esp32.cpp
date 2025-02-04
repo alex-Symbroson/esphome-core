@@ -18,7 +18,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "wifi_esp32";
+__unused static const char *TAG = "wifi_esp32";
 
 bool WiFiComponent::wifi_mode_(optional<bool> sta, optional<bool> ap) {
   uint8_t current_mode = WiFi.getMode();
@@ -287,7 +287,7 @@ void WiFiComponent::wifi_event_callback_(system_event_id_t event, system_event_i
       break;
     }
     case SYSTEM_EVENT_SCAN_DONE: {
-      auto it = info.scan_done;
+      __unused auto it = info.scan_done;
       ESP_LOGV(TAG, "Event: WiFi Scan Done status=%u number=%u scan_id=%u", it.status, it.number, it.scan_id);
       break;
     }
@@ -318,13 +318,13 @@ void WiFiComponent::wifi_event_callback_(system_event_id_t event, system_event_i
       break;
     }
     case SYSTEM_EVENT_STA_AUTHMODE_CHANGE: {
-      auto it = info.auth_change;
+      __unused auto it = info.auth_change;
       ESP_LOGV(TAG, "Event: Authmode Change old=%s new=%s", get_auth_mode_str(it.old_mode),
                get_auth_mode_str(it.new_mode));
       break;
     }
     case SYSTEM_EVENT_STA_GOT_IP: {
-      auto it = info.got_ip.ip_info;
+      __unused auto it = info.got_ip.ip_info;
       ESP_LOGV(TAG, "Event: Got IP static_ip=%s gateway=%s", format_ip4_addr(it.ip).c_str(),
                format_ip4_addr(it.gw).c_str());
       break;
@@ -342,12 +342,12 @@ void WiFiComponent::wifi_event_callback_(system_event_id_t event, system_event_i
       break;
     }
     case SYSTEM_EVENT_AP_STACONNECTED: {
-      auto it = info.sta_connected;
+      __unused auto it = info.sta_connected;
       ESP_LOGV(TAG, "Event: AP client connected MAC=%s aid=%u", format_mac_addr(it.mac).c_str(), it.aid);
       break;
     }
     case SYSTEM_EVENT_AP_STADISCONNECTED: {
-      auto it = info.sta_disconnected;
+      __unused auto it = info.sta_disconnected;
       ESP_LOGV(TAG, "Event: AP client disconnected MAC=%s aid=%u", format_mac_addr(it.mac).c_str(), it.aid);
       break;
     }
@@ -356,7 +356,7 @@ void WiFiComponent::wifi_event_callback_(system_event_id_t event, system_event_i
       break;
     }
     case SYSTEM_EVENT_AP_PROBEREQRECVED: {
-      auto it = info.ap_probereqrecved;
+      __unused auto it = info.ap_probereqrecved;
       ESP_LOGV(TAG, "Event: AP receive Probe Request MAC=%s RSSI=%d", format_mac_addr(it.mac).c_str(), it.rssi);
       break;
     }
@@ -383,10 +383,10 @@ void WiFiComponent::wifi_event_callback_(system_event_id_t event, system_event_i
 void WiFiComponent::wifi_register_callbacks_() {
   auto f = std::bind(&WiFiComponent::wifi_event_callback_, this, std::placeholders::_1, std::placeholders::_2);
   WiFi.onEvent(std::function<void(arduino_event_id_t event, arduino_event_info_t info)>
-    ([fun=f](arduino_event_id_t event, arduino_event_info_t info){
+    ([f](arduino_event_id_t event, arduino_event_info_t info){
       system_event_info_t* info2 = (system_event_info_t*)&info;
       system_event_id_t event2 = (system_event_id_t)event;
-      fun(event2, *info2);
+      f(event2, *info2);
   }));
   WiFi.persistent(false);
 }

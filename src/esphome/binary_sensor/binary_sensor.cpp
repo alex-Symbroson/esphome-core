@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace binary_sensor {
 
-static const char *TAG = "binary_sensor";
+__unused static const char *TAG = "binary_sensor";
 
 void BinarySensor::add_on_state_callback(std::function<void(bool)> &&callback) {
   this->state_callback_.add(std::move(callback));

@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace climate {
 
-static const char *TAG = "climate.climate";
+__unused static const char *TAG = "climate.climate";
 
 void ClimateCall::perform() {
   ESP_LOGD(TAG, "'%s' - Setting", this->parent_->get_name().c_str());

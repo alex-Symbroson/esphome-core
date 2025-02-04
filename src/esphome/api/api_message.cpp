@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace api {
 
-static const char *TAG = "api.message";
+__unused static const char *TAG = "api.message";
 
 bool APIMessage::decode_varint(uint32_t field_id, uint32_t value) { return false; }
 bool APIMessage::decode_length_delimited(uint32_t field_id, const uint8_t *value, size_t len) { return false; }

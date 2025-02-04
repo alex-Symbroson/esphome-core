@@ -13,7 +13,7 @@ extern "C" {
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "preferences";
+__unused static const char *TAG = "preferences";
 
 ESPPreferenceObject::ESPPreferenceObject() : rtc_offset_(0), length_words_(0), type_(0), data_(nullptr) {}
 ESPPreferenceObject::ESPPreferenceObject(size_t rtc_offset, size_t length, uint32_t type)

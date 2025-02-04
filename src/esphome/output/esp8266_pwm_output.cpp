@@ -16,7 +16,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace output {
 
-static const char *TAG = "output.esp8266_pwm";
+__unused static const char *TAG = "output.esp8266_pwm";
 
 ESP8266PWMOutput::ESP8266PWMOutput(const GPIOOutputPin &pin) : pin_(pin) {}
 

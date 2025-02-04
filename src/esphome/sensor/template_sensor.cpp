@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace sensor {
 
-static const char *TAG = "sensor.template";
+__unused static const char *TAG = "sensor.template";
 
 TemplateSensor::TemplateSensor(const std::string &name, uint32_t update_interval)
     : PollingSensorComponent(name, update_interval) {}

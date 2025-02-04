@@ -11,7 +11,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace stepper {
 
-static const char *TAG = "stepper";
+__unused static const char *TAG = "stepper";
 
 void Stepper::calculate_speed_(uint32_t now) {
   // delta t since last calculation in seconds

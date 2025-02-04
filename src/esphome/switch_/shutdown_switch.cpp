@@ -11,7 +11,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace switch_ {
 
-static const char *TAG = "switch.shutdown";
+__unused static const char *TAG = "switch.shutdown";
 
 ShutdownSwitch::ShutdownSwitch(const std::string &name) : Switch(name) {}
 

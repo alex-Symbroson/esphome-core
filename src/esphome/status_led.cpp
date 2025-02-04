@@ -7,7 +7,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "status_led";
+__unused static const char *TAG = "status_led";
 
 StatusLEDComponent *global_status_led = nullptr;
 

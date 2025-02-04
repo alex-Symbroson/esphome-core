@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace display {
 
-static const char *TAG = "display.lcd";
+__unused static const char *TAG = "display.lcd";
 
 // First set bit determines command, bits after that are the data.
 static const uint8_t LCD_DISPLAY_COMMAND_CLEAR_DISPLAY = 0x01;

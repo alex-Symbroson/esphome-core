@@ -10,7 +10,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace binary_sensor {
 
-static const char *TAG = "binary_sensor.homeassistant";
+__unused static const char *TAG = "binary_sensor.homeassistant";
 
 void HomeassistantBinarySensor::setup() {
   api::global_api_server->subscribe_home_assistant_state(this->entity_id_, [this](std::string state) {

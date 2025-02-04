@@ -10,7 +10,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace text_sensor {
 
-static const char *TAG = "text_sensor.homeassistant";
+__unused static const char *TAG = "text_sensor.homeassistant";
 
 HomeassistantTextSensor::HomeassistantTextSensor(const std::string &name, const std::string &entity_id)
     : TextSensor(name), entity_id_(entity_id) {}

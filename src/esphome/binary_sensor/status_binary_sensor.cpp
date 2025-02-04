@@ -11,7 +11,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace binary_sensor {
 
-static const char *TAG = "binary_sensor.status";
+__unused static const char *TAG = "binary_sensor.status";
 
 std::string StatusBinarySensor::device_class() { return "connectivity"; }
 StatusBinarySensor::StatusBinarySensor(const std::string &name) : BinarySensor(name) {}

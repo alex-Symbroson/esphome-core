@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace binary_sensor {
 
-static const char *TAG = "binary_sensor.template";
+__unused static const char *TAG = "binary_sensor.template";
 
 TemplateBinarySensor::TemplateBinarySensor(const std::string &name) : BinarySensor(name) {}
 void TemplateBinarySensor::loop() {

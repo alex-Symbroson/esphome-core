@@ -9,7 +9,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace light {
 
-static const char *TAG = "light.fast_led";
+__unused static const char *TAG = "light.fast_led";
 
 LightTraits FastLEDLightOutputComponent::get_traits() { return {true, true, false, false}; }
 void FastLEDLightOutputComponent::setup() {

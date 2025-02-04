@@ -7,7 +7,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "i2c";
+__unused static const char *TAG = "i2c";
 
 I2CComponent::I2CComponent(uint8_t sda_pin, uint8_t scl_pin, bool scan)
     : sda_pin_(sda_pin), scl_pin_(scl_pin), scan_(scan) {

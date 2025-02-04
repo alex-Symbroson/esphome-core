@@ -10,7 +10,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace binary_sensor {
 
-static const char *TAG = "binary_sensor.gpio";
+__unused static const char *TAG = "binary_sensor.gpio";
 
 void GPIOBinarySensorComponent::setup() {
   ESP_LOGCONFIG(TAG, "Setting up GPIO binary sensor '%s'...", this->name_.c_str());

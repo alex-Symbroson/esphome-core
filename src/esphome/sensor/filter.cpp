@@ -12,7 +12,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace sensor {
 
-static const char *TAG = "sensor.filter";
+__unused static const char *TAG = "sensor.filter";
 
 // Filter
 uint32_t Filter::expected_interval(uint32_t input) { return input; }

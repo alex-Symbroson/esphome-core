@@ -10,7 +10,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace text_sensor {
 
-static const char *TAG = "text_sensor.version";
+__unused static const char *TAG = "text_sensor.version";
 
 void VersionTextSensor::setup() {
   if (get_app_compilation_time().empty()) {

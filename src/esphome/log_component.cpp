@@ -9,7 +9,7 @@
 
 ESPHOME_NAMESPACE_BEGIN
 
-static const char *TAG = "logger";
+__unused static const char *TAG = "logger";
 
 int HOT LogComponent::log_vprintf_(int level, const char *tag, const char *format, va_list args) {  // NOLINT
   if (level > this->level_for(tag))

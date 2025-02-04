@@ -10,7 +10,7 @@ ESPHOME_NAMESPACE_BEGIN
 
 namespace switch_ {
 
-static const char *TAG = "switch.restart";
+__unused static const char *TAG = "switch.restart";
 
 std::string RestartSwitch::icon() { return "mdi:restart"; }
 RestartSwitch::RestartSwitch(const std::string &name) : Switch(name) {}
