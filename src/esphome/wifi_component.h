@@ -117,8 +117,26 @@ enum WiFiPowerSaveMode {
   WIFI_POWER_SAVE_HIGH,
 };
 
+
+class MinimalWiFiComponent;
+extern MinimalWiFiComponent *global_wifi_component;
+
+class MinimalWiFiComponent : public Component {
+ public:
+ 
+  /// Construct a WiFiComponent.
+  MinimalWiFiComponent() { global_wifi_component = this; };
+
+  virtual void setup() = 0;
+  virtual void loop() = 0;
+
+  virtual bool is_connected() = 0;
+  virtual std::string get_use_address() const = 0;
+  virtual bool can_proceed() = 0;
+};
+
 /// This component is responsible for managing the ESP WiFi interface.
-class WiFiComponent : public Component {
+class WiFiComponent : public MinimalWiFiComponent {
  public:
   /// Construct a WiFiComponent.
   WiFiComponent();
@@ -236,8 +254,6 @@ template<typename... Ts> class WiFiConnectedCondition : public Condition<Ts...> 
  public:
   bool check(Ts... x) override;
 };
-
-extern WiFiComponent *global_wifi_component;
 
 template<typename... Ts> bool WiFiConnectedCondition<Ts...>::check(Ts... x) {
   return global_wifi_component->is_connected();

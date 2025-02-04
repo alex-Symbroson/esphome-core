@@ -113,7 +113,7 @@ void WiFiComponent::loop() {
   network_tick_mdns();
 }
 
-WiFiComponent::WiFiComponent() { global_wifi_component = this; }
+WiFiComponent::WiFiComponent() {}
 
 bool WiFiComponent::has_ap() const { return !this->ap_.get_ssid().empty(); }
 bool WiFiComponent::has_sta() const { return !this->sta_.empty(); }
@@ -538,6 +538,6 @@ int8_t WiFiScanResult::get_rssi() const { return this->rssi_; }
 bool WiFiScanResult::get_with_auth() const { return this->with_auth_; }
 bool WiFiScanResult::get_is_hidden() const { return this->is_hidden_; }
 
-WiFiComponent *global_wifi_component;
+MinimalWiFiComponent *global_wifi_component;
 
 ESPHOME_NAMESPACE_END
